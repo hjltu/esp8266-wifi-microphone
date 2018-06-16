@@ -9,3 +9,5 @@ send to Yandex SpeechKit Cloud and receiving text
 The microphone(max4466) is connected to A0 in esp8266
 esp8266 transmit raw audio to MQTT server.
 conv.sh converting audio and with yandex speechkit getting text.
+
+Video: [Youtube](https://youtu.be/rU_Pw9Jb_PM)
