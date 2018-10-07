@@ -2,11 +2,11 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
-const char *ssid =  "SSID";
-const char *pass =  "PASS";
+const char *ssid =  "SSID";	// Change it
+const char *pass =  "PASS";	// Change it
 
 WiFiClient wclient;
-IPAddress mqtt_server(192,168,0,10);
+IPAddress mqtt_server(192,168,0,10);		// Change it
 PubSubClient client(wclient, mqtt_server);
 
 //	client name
