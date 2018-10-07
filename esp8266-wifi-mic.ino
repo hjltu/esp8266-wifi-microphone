@@ -27,7 +27,7 @@ void setup()
 	WiFi.mode(WIFI_STA);
 	WiFi.begin(ssid, pass);
 	pinMode(0,INPUT_PULLUP);	//	bt D3
-	pinMode(2,OUTPUT);			//	rele D0
+	pinMode(16,OUTPUT);			//	rele D0 led
 }
 
 void loop()
@@ -51,8 +51,8 @@ void my_connect()
 		if(WiFi.waitForConnectResult() != WL_CONNECTED)
 		{
 			Serial.println(2);		//WiFi NOT connected
-			if(digitalRead(2)==LOW)
-				digitalWrite(2,HIGH);
+			if(digitalRead(16)==LOW)
+				digitalWrite(16,HIGH);
 			return;
 		}
 		Serial.println(3);			//WiFi connected
@@ -69,15 +69,15 @@ void my_connect()
 			else
 			{
 				Serial.println(6);		//Could not connect to MQTT server
-				if(digitalRead(2)==LOW)
-					digitalWrite(2,HIGH);
+				if(digitalRead(16)==LOW)
+					digitalWrite(16,HIGH);
 			}
 		}
 		if(client.connected())
 		{
 			client.loop();
-			if(digitalRead(2)==HIGH)
-				digitalWrite(2,LOW);
+			if(digitalRead(16)==HIGH)
+				digitalWrite(16,LOW);
 		}
 	}
 }
