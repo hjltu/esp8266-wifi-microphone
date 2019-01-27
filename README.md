@@ -15,3 +15,5 @@ esp8266 transmit raw audio to MQTT server.
 conv.sh converting audio and with yandex speechkit getting text.
 
 Video: [Youtube](https://youtu.be/rU_Pw9Jb_PM)
+
+tip: use node-red for save RAW file
