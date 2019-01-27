@@ -16,4 +16,4 @@ conv.sh converting audio and with yandex speechkit getting text.
 
 Video: [Youtube](https://youtu.be/rU_Pw9Jb_PM)
 
-tip: use node-red for save RAW file
+tip: use node-red to save the RAW file
