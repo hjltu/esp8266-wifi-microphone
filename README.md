@@ -3,8 +3,8 @@
 **esp8266-wifi-mic.ino** - Arduino IDE file for esp8266,
 nodemcu or wemos d1 mini.
 
-**conv.sh** - file for converting raw audio in wav 16bit and
-send to Yandex SpeechKit Cloud and receiving text.
+**conv.sh** - convert from raw audio to 16-bit WAV and
+receive text from Yandex SpeechKit Cloud.
 
 **test16.wav** - sample.
 
